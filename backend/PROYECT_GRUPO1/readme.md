@@ -1,4 +1,4 @@
-#### tea colombian gourmet
+#### team colombian gourmet
 
 This is the backend of the final proyect 
 
