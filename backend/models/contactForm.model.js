@@ -14,6 +14,11 @@ const contactFormSchema =  new mongoose.Schema({
     required: true,
     
   },
+  subject: {
+    type: String,
+    required: true,
+    
+  },
   text: {
     type: String,
     required: true,

@@ -9,7 +9,9 @@ const authRoutes = require('./routes/auths.router');//hace un llamado a auth.rou
 const productsRouters = require('./routes/products.router');
 const usersRouters = require('./routes/users.router');
 const FormsRouters = require('./routes/contactForms.router');
-const cors = require ('cors');
+var cors = require ('cors');
+
+
 
 
 
@@ -20,6 +22,7 @@ routerApi(app);
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 app.use(cors());
+
 
 // Conexión a Base de datos
 
@@ -32,7 +35,8 @@ mongoose
 app.use('/api',authRoutes);
 app.use('/api/products', productsRouters);
 app.use('/api/users', usersRouters);
-app.use('/api/Forms', FormsRouters);
+app.use('/api/forms', FormsRouters);
+
 
 
 // iniciar server
