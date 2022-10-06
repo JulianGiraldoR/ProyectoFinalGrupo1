@@ -1,5 +1,5 @@
 import { Component, Input, OnInit ,Output,EventEmitter} from '@angular/core';
-import { ProductsService } from 'src/app/services/products.service';
+
 
 import { Product } from '../../models/product.model';
 
@@ -17,6 +17,7 @@ export class ProductsComponent implements OnInit {
     title:"",
     description:"",
     category:"",
+    origin:"",
     ingredients:"",
     imgUrl:"",
   }
@@ -26,18 +27,13 @@ export class ProductsComponent implements OnInit {
 
 
   constructor(
-    private ProductsService: ProductsService
+   
   ) { }
 
-  ngOnInit(){
-    this.ProductsService.getProducts()
-    .subscribe(
-      res => {
-        console.log(res)
-      },
-      err => console.log(err)
-    )
+  ngOnInit():void{
+    
 
  
 }
+
 }

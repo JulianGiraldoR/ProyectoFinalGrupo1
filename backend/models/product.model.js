@@ -16,6 +16,11 @@ const productSchema =  new mongoose.Schema({
     required: true,
     
   },
+  origin: {
+    type: String,
+    required: true,
+    
+  },
   ingredients: {
     type: String,
     required: true,
@@ -25,7 +30,6 @@ const productSchema =  new mongoose.Schema({
     required: false,
   }
  
-},{timestamps: true,
-  versionKey:false})
+},{versionKey:false})
 
 module.exports = mongoose.model("Product", productSchema);

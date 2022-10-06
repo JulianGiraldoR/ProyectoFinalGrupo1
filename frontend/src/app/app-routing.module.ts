@@ -6,6 +6,8 @@ import{ProductsComponent} from './components/products/products.component'
 import{PrivateProductsComponent} from './components/private-products/private-products.component'
 import{LoginComponent} from './components/login/login.component'
 import{RegisterComponent} from './components/register/register.component'
+import { AdminComponent } from './components/admin/admin.component';
+import { MainSectionComponent } from './components/main-section/main-section.component';
 
 import {AuthGuard} from './auth.guard'
 import { FormComponent } from './components/form/form.component';
@@ -18,7 +20,7 @@ const routes: Routes = [
   },
   {
     path:'products',
-    component:ProductsComponent
+    component:MainSectionComponent
   },
   {
     path:'private',
@@ -38,6 +40,11 @@ const routes: Routes = [
     path:'register',
     component:RegisterComponent
   },
+  {
+  path:'admin',
+  component:AdminComponent,
+  canActivate:[AuthGuard]
+}
 
 ];
 

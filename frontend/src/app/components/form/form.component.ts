@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from '../../services/auth.service'
+import {FormService} from '../../services/form.service'
 import {Router} from '@angular/router'
-import { ElementSchemaRegistry } from '@angular/compiler';
+
 
 @Component({
   selector: 'app-form',
@@ -19,7 +19,7 @@ export class FormComponent implements OnInit {
   }
 
   constructor(
-    private authService:AuthService,
+    private FormService:FormService,
     private router:Router,
   ) { }
 
@@ -27,7 +27,7 @@ export class FormComponent implements OnInit {
   }
 
   form(){
-    this.authService.form(this.contactForm)
+    this.FormService.form(this.contactForm)
     .subscribe(
       res =>{
         console.log(res)

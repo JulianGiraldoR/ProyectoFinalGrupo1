@@ -1,5 +1,4 @@
 
-
   .contact_form{ 
     display: flex; 
     
@@ -9,7 +8,10 @@
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
-    background-color: #fbfbfb; 
+    background: -webkit-linear-gradient(to right, #0f0f10,#290b17,#4a0e38, #5b105b);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #252529, #5a3b5a, #290b17, #7e1a60); 
     padding-left: 30px;
     font-family: 'Noto Sans', sans-serif; 
     
@@ -58,8 +60,8 @@
     margin-bottom: 20px; 
     margin-top: 10px;   
     text-transform: uppercase;
-    background-color: #4798b8; 
-    border-color: #4798b8; 
+    background: linear-gradient(to right, #d4d4dc, #5a3b5a, #5a3b5a, #cfc3cb);
+    border-color: black; 
     border-style: solid; 
     border-radius: 10px;  
     width: 420px;   
@@ -73,35 +75,38 @@
   
   
   span{
-    color: #4798b8; 
+    color: white; 
+    font-size: 20px;
   }
   
   
   .aviso{
     font-size: 13px;  
-    color: #0e0e0e;  
+    color: white;  
   }
   
   
   h1{
     font-size: 39px;  
-    text-align: letf; 
+    text-align: center; 
     padding-bottom: 20px; 
-    color: #4798b8;
+    color:white;
     
   }
   
   
   h3{
-    font-size: 16px; 
+    font-size: 21px; 
+    text-align: center;
     padding-bottom: 30px;
-    color: #0e0e0e;   
+    color:white;   
   }
   
   
   p{
     font-size: 14px; 
-    color: #0e0e0e; 
+    color: white; 
+    font-size: 20px;
   }
   
   

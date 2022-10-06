@@ -38,10 +38,6 @@ export class AuthService {
     this.router.navigate(['/products'])
    }
 
-   form(Forms:any){
-    return this.http.post<any>(this.URL + '/forms',Forms);
   }
-  }
-  
 
 

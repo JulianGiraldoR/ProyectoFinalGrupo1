@@ -4,10 +4,9 @@ import { Product } from '../models/product.model';
 
 
 
-interface getProductData {
+interface getProductData{
   products: Product[];
 }
-
 @Injectable({
   providedIn: 'root'
 })
@@ -23,3 +22,4 @@ export class ProductsService {
   }
 
 }
+

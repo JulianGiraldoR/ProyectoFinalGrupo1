@@ -1,0 +1,11 @@
+main{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .productCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 60px;
+  }

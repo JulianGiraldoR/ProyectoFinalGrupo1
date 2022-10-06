@@ -13,6 +13,9 @@ import { PrivateProductsComponent } from './components/private-products/private-
 import { AuthGuard } from './auth.guard';
 import { FormComponent } from './components/form/form.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { MainSectionComponent } from './components/main-section/main-section.component';
+
 
 
 
@@ -24,7 +27,10 @@ import { HeaderComponent } from './components/header/header.component';
     ProductsComponent,
     PrivateProductsComponent,
     FormComponent,
-    HeaderComponent
+    HeaderComponent,
+    AdminComponent,
+    MainSectionComponent,
+   
   ],
   imports: [
     BrowserModule,
