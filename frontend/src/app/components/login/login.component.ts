@@ -28,11 +28,13 @@ private router: Router
       res => {
         console.log(res),
         localStorage.setItem('token',res.token);//guardo el token que me envia en el localstorage
-        this.router.navigate (['/private']);//redirecciona a la ruta product-private
+        this.router.navigate (['/products']);//redirecciona a la ruta product-private
 
 
       },
       err => console.log(err)
+  
+      
     )
   }
 

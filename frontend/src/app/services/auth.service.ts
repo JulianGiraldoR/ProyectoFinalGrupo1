@@ -21,6 +21,7 @@ export class AuthService {
     return this.http.post<any>(this.URL + '/register',user);
   }
   login(user:any){
+    
     return this.http.post<any>(this.URL + '/login',user);
   }
 
@@ -34,8 +35,9 @@ export class AuthService {
     return localStorage.getItem('token')
    }
    logout(){
+    (confirm('You are Logout succesfull'))
     localStorage.removeItem('token')
-    this.router.navigate(['/products'])
+    this.router.navigate(['/home'])
    }
 
   }

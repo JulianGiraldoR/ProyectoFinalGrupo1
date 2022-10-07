@@ -11,16 +11,18 @@ import { MainSectionComponent } from './components/main-section/main-section.com
 
 import {AuthGuard} from './auth.guard'
 import { FormComponent } from './components/form/form.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
     path:'',
-    redirectTo: '/products',
+    redirectTo: '/home',
     pathMatch:'full'
   },
   {
     path:'products',
-    component:MainSectionComponent
+    component:MainSectionComponent,
+    canActivate:[AuthGuard]
   },
   {
     path:'private',
@@ -39,6 +41,10 @@ const routes: Routes = [
   {
     path:'register',
     component:RegisterComponent
+  },
+  {
+    path:'home',
+    component:HomeComponent
   },
   {
   path:'admin',

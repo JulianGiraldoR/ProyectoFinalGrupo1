@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
     .subscribe(
       res =>{
         console.log(res)
-        this.router.navigate(['/private'])//redirecciona a la ruta product-private
+        this.router.navigate(['/login'])//redirecciona a la ruta Login si los datos son correctos
       },
       err=> console.log(err)
     )
